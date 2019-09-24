@@ -4,4 +4,12 @@ pragma solidity ^0.5.0;
 
 contract Adoption {
 
+/*
+We've defined a single variable: adopters. This is an array of Ethereum addresses.
+Arrays contain one type and can have a fixed or variable length. In this case the
+type is address and the length is 16.
+*/
+
+address[16] public adopters;
+
 }
