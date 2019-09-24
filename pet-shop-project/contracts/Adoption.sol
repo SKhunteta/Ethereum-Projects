@@ -12,4 +12,14 @@ type is address and the length is 16.
 
 address[16] public adopters;
 
+//Adopting a pet
+
+function adopt(uint petId) public returns (uint) {
+require(petId >= 0 && petId <= 15);
+adopters[petId] = msg.sender;
+
+return petId;
+
+}
+
 }
